@@ -191,19 +191,55 @@ function mesesDelAño(array) {
    // "Marzo" y "Noviembre", guardarlos en un nuevo arreglo y retornarlo.
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
+   var mesesDesordenados=["Enero", "Marzo" , "noviembre"];
+   var mesesEncontrados=[]
+
+   for(i=0; i<array.length; i++){
+
+      if(mesesDesordenados.include(array[i])){
+         mesesEncontrados.push(array[i]);
+      }
+      
+
+      if(mesesEncontrados.leght=== mesesDesordenados.legth){
+
+         return mesesEncontrados;
+      }else{
+         return "No se encontraron los meses";
+      }
+    
    
+   }
 }
 
 function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   var tabla=[]
+
+   for(i=0;i<=10;i++){
+      var resultado= 6*i;
+
+      tabla.push(resultado);
+   }
+   return tabla;
 }
 
 function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   var numMayor=[];
+
+   for(i=0; i<array.leght; i++){
+
+      if(array[i]>100){
+         numMayor.push(array[i]);
+      }
+   }
+
+   return numMayor;
 }
 
 /* ----------------------------------------------------------------------------------
@@ -217,6 +253,25 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+
+   var resultado=[];
+   var suma=num;
+
+   for(i-0; i<10; i++){
+      suma+= 2;
+      resultado.push(suma);
+
+      if(suma=== i){
+
+         break;
+      }
+
+   }
+
+   return resultado;
+
+   
+
 }
 
 function continueStatement(num) {
@@ -226,6 +281,20 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+
+   var resultados = [];
+   var suma = num;
+ 
+   for (var i = 0; i < 10; i++) {
+     if (i === 5) {
+       continue;
+     }
+ 
+     suma += 2;
+     resultados.push(suma);
+   }
+ 
+   return resultados;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
